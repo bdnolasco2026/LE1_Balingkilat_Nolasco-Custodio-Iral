@@ -77,7 +77,7 @@ const questions = [
         optionA: "Andy Samberg",
         optionB: "Selena Gomez",
         optionC: "Alicia Silverstone",
-        optionD: "Chelsea Perettu",
+        optionD: "Chelsea Peretti",
         correctOption: "optionD"
     },
 
@@ -188,7 +188,7 @@ function handleNextQuestion() {
     checkForAnswer() 
     unCheckRadioButtons()
     setTimeout(() => {
-        if (indexNumber < 5) {
+        if (indexNumber <= 6) {
             NextQuestion(indexNumber)
         }
         else {
