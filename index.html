@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brooklyn 99-Quiz</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="stylee.css" rel="stylesheet">
+    </head>
+      
+    <body onload="NextQuestion(0)">
+          <main>
+              <div class="modal-container" id="score-modal">
+      
+                  <div class="modal-content-container">
+                  </div>
+              </div>
+      
+              <div class="b99-quiz-container">
+      
+                  <div class="b99-details-container">
+                        <div class="align-right"><h2>Question # <span id="question-number"></span></h2></div>
+                        <div class="align-right"><h2>Score : <span id="player-score"></span> / 5</h2></div>
+                  
+                  </div>
+      
+                  <div class="b99-question-container">
+                      <div id="display-question"></div>
+        
+                  </div>
+                  
+                  <div class="b99-options-container">
+      
+                   
+      
+                      <span>
+                          <input type="radio" id="option-one" name="option" class="radio" value="optionA">
+                          <label for="option-one" class="option" id="option-one-label"></label>
+                      </span>
+      
+      
+                      <span>
+                          <input type="radio" id="option-two" name="option" class="radio" value="optionB">
+                          <label for="option-two" class="option" id="option-two-label"></label>
+                      </span>
+      
+      
+                      <span>
+                          <input type="radio" id="option-three" name="option" class="radio" value="optionC">
+                          <label for="option-three" class="option" id="option-three-label"></label>
+                      </span>
+      
+      
+                      <span>
+                          <input type="radio" id="option-four" name="option" class="radio" value="optionD">
+                          <label for="option-four" class="option" id="option-four-label"></label>
+                      </span>
+      
+      
+                  </div>
+      
+                  <div class="next-button-container">
+                      <button onclick="handleNextQuestion()">Next Question</button>
+                  </div>
+              </div>
+              
+        <footer>
+            <p>Copyright © 2023. Nolasco-Custodio-Iral. All Rights Reserved.</p>
+        </footer>
+          </main>
+          <script src="javascript.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+    </body>
+</html>
